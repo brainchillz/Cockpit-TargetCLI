@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script type="text/javascript" src="../base1/cockpit.js"></script>
+	<script type="text/javascript" src="../manifests.js"></script>
+	<title>iSCSI Targets</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div id="app">
+		<header class="hdr">
+			<h1>iSCSI Targets <span class="subtitle">(targetcli / LIO)</span></h1>
+			<div class="actions">
+				<span id="status" class="status"></span>
+				<button id="refresh" class="btn">Refresh</button>
+			</div>
+		</header>
+		<div id="error" class="error" hidden></div>
+		<main id="content"></main>
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

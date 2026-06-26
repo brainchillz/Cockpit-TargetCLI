@@ -1,0 +1,17 @@
+{
+    "version": 0,
+
+    "menu": {
+        "targetcli": {
+            "label": "iSCSI Targets",
+            "path": "index.html",
+            "order": 117,
+            "docs": [
+                {
+                    "label": "targetcli / LIO documentation",
+                    "url": "https://www.kernel.org/doc/Documentation/target/"
+                }
+            ]
+        }
+    }
+}

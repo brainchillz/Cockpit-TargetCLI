@@ -1,0 +1,14 @@
+# Local tooling / editor
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets — never commit
+token
+github-token
+*.pem
+*.key
+*.crt
+
+# Build artifacts
+*.tgz
