@@ -62,6 +62,10 @@ def backup():
 
 
 def persist():
+    # On a host where targetcli has never saved its config the directory may
+    # not exist yet; create it so save_to_file() does not fail. (Some rtslib_fb
+    # versions raise a bare NameError instead of a clean error in that case.)
+    os.makedirs(os.path.dirname(SAVE_FILE), exist_ok=True)
     RTSRoot().save_to_file(SAVE_FILE)
 
 
